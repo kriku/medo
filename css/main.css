@@ -96,7 +96,7 @@ h1 {
   margin: 0;
   padding: 1em;
   margin-top: 6em;
-  height: 7em;
+  height: 10em;
   box-sizing: border-box;
   background-size: contain;
   background-position: center;
@@ -197,7 +197,11 @@ svg.ol-item {
   }
 }
 
-#org1 { background-image: url(img/logo_institut.png);}
+#org1 {
+  background-image: url(img/logo_institut.png);
+  background-size: auto 70%;
+}
+
 #org2 { background-image: url(img/logo_lsh.png);}
 
 #dasha {  background-image: url(img/Dasha.png);  }
