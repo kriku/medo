@@ -26,6 +26,11 @@
 
 html, body {
   font-family: Circe;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility:    visible;
+  -ms-backface-visibility:     visible;
+  margin-bottom: 6em;
 }
 
 .container {
@@ -34,24 +39,27 @@ html, body {
   margin-right: auto;
   margin-left: auto;
   text-align: justify;
-  font-size: 80%;
+  font-size: 1em;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 730px;
-    font-size: 90%;
+    font-size: 1.1em;
   }
 }
+
 @media (min-width: 1020px) {
   .container {
-    width: 900px;
-    font-size: 100%;
+    width: 860px;
+    font-size: 1.2em;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
-    width: 1100px;
-    font-size: 110%;
+    width: 1000px;
+    font-size: 1.4em;
   }
 }
 
@@ -66,11 +74,12 @@ a:hover {
 
 p {
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1em;
 }
+
 p.lead {
   font-weight: 200;
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-align: center;
   margin-bottom: 0.5em;
 }
@@ -86,18 +95,110 @@ h1 {
   width: 50%;
   margin: 0;
   padding: 1em;
+  margin-top: 6em;
+  height: 10em;
   box-sizing: border-box;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+.half p {
+  margin-top: -6em;
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
   content: " ";
 }
+
 .clearfix:after {
   clear: both;
 }
 
 ol {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 200;
+}
+
+.third {
+  width: 30%;
+  margin: 0 1.66% 18em;
+  height: 10em;
+  float: left;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .third {
+    width: 40%;
+    margin: 0 5% 14em;
+  }
+}
+
+.third .description {
+  position: relative;
+  text-align: center;
+  top: 6em;
+}
+
+.third .name {
+  position: relative;
+  top: 7em;
+  padding-left: 3em;
+}
+
+.third .about {
+  text-transform: uppercase;
+  color: #C8C8C8;
+  font-size: 0.7em;
+  padding: 2em;
+  position: relative;
+  top: 10em;
+}
+
+.third .l-line {
+  position: absolute;
+  left: 0;
+  top: 1em;
+  width: 80%;
+  padding-left: 5%;
+}
+
+@media (max-width: 1020px) {
+  .third .l-line {
+    top: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .third .l-line {
+    top: -2em;
+  }
+}
+
+#org1 { background-image: url(img/logo_institut.png);}
+#org2 { background-image: url(img/logo_lsh.png);}
+
+#dasha {  background-image: url(img/Dasha.png);  }
+#olya  {  background-image: url(img/Olya.png);   }
+#vanya {  background-image: url(img/Vanya.png);  }
+#vera  {  background-image: url(img/Vera.png);   }
+#vlad  {  background-image: url(img/Vlad.png);   }
+#vova  {  background-image: url(img/Vova.png);   }
+
+/* retina fix*/
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  #org1     { background-image: url(img/logo_institut@2x.png);}
+  #org2     { background-image: url(img/logo_lsh@2x.png);     }
+  #dasha    { background-image: url(img/Dasha@2x.png);        }
+  #olya     { background-image: url(img/Olya@2x.png);         }
+  #vanya    { background-image: url(img/Vanya@2x.png);        }
+  #vera     { background-image: url(img/Vera@2x.png);         }
+  #vlad     { background-image: url(img/Vlad@2x.png);         }
+  #vova     { background-image: url(img/Vova@2x.png);         }
 }
