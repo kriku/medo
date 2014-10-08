@@ -98,11 +98,11 @@ h1 {
   margin-top: 6em;
   height: 10em;
   box-sizing: border-box;
-
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .half p {
   margin-top: -6em;
 }
@@ -117,9 +117,25 @@ h1 {
   clear: both;
 }
 
-ol {
+.ol {
   font-size: 1em;
   font-weight: 200;
+  list-style: none;
+  margin-left: 3em;
+  position: relative;
+}
+
+.ol-item {
+  position: absolute;
+  margin-left: -1em;
+  width: 1em;
+  height: 1em;
+  font-size: 3em;
+  font-weight: 900;
+}
+svg.ol-item {
+  margin-left: -1.2em;
+  height: 1.2em;
 }
 
 .third {
